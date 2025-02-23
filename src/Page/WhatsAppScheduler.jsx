@@ -12,7 +12,9 @@ const countryCodes = [
 const WhatsAppScheduler = () => {
   const [selectedCountryCode, setSelectedCountryCode] = useState("1");
   const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(
+    "Hello it's us you can take our survey by clicking this link https://chat-with-me-bro.vercel.app/"
+  );
 
   const sendWhatsAppMessage = () => {
     if (!phone || !message) {
